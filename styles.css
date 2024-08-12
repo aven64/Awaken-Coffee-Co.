@@ -1,0 +1,256 @@
+/* Importing Cursive Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3e2c25;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d9b08c;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 10rem 2rem 8rem;
+    background-image: url('https://static.wixstatic.com/media/c3b488_a9e09d7c334e4a9286a37cf0d9940325~mv2.jpeg/v1/fill/w_504,h_549,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/E0967976-48E4-4F88-B153-F29A2B9AC17B.jpeg');
+    background-size: 800px 600px;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #fff;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section p {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section button {
+    background-color: #d9b08c;
+    color: #4b3832;
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-family: 'Dancing Script', cursive;
+    animation: fadeInUp 1s ease;
+    z-index: 1;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section button:hover {
+    background-color: #f4d4a4;
+    transform: scale(1.1);
+}
+
+/* Menu Section */
+#menu {
+    padding: 6rem 2rem;
+    background-color: #f8f5f2;
+    text-align: center;
+}
+
+#menu h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4b3832;
+    font-family: 'Dancing Script', cursive;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 6rem 2rem;
+    background-color: #fff;
+}
+
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4b3832;
+    font-family: 'Dancing Script', cursive;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery-container img {
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 6rem 2rem;
+    background-color: #f8f5f2;
+    text-align: center;
+}
+
+#testimonials h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4b3832;
+    font-family: 'Dancing Script', cursive;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    padding: 6rem 2rem;
+    background-color: #3e2c25;
+    color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.875rem;
+}
