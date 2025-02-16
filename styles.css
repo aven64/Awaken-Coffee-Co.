@@ -56,11 +56,11 @@ nav a:hover {
 .hero-section {
     text-align: center;
     padding: 10rem 2rem 8rem;
-    background-image: url('https://static.wixstatic.com/media/c3b488_a9e09d7c334e4a9286a37cf0d9940325~mv2.jpeg/v1/fill/w_504,h_549,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/E0967976-48E4-4F88-B153-F29A2B9AC17B.jpeg');
-    background-size: 800px 600px;
-    background-repeat: no-repeat;
+    background-image: url(images/logo.png);
+    background-size: 600px 600px;
+    background-repeat: repeat;
     background-position: top;
-    color: #fff;
+    color: #ffffff;
     position: relative;
     background-attachment: fixed;
 }
@@ -119,14 +119,6 @@ nav a:hover {
     text-align: center;
 }
 
-#menu h2 {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-    font-weight: 600;
-    color: #4b3832;
-    font-family: 'Dancing Script', cursive;
-}
-
 .menu-container {
     display: flex;
     flex-wrap: wrap;
@@ -134,19 +126,10 @@ nav a:hover {
     justify-content: center;
 }
 
-.menu-item {
-    background-color: #fff;
-    padding: 2rem;
+.menu-container img {
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    max-width: 280px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    max-width: 40%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
 }
 
 /* Gallery Section */
@@ -173,7 +156,7 @@ nav a:hover {
 
 .gallery-container img {
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 15%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -237,13 +220,6 @@ nav a:hover {
 
 .contact-info {
     margin-bottom: 2rem;
-}
-
-#map {
-    height: 300px;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer */
