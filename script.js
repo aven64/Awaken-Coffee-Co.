@@ -1,19 +1,18 @@
-// Smooth scrolling to sections
-function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-}
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("nav ul li a").forEach(anchor => {
+        anchor.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default anchor link behavior
+            const sectionId = this.getAttribute("href").substring(1); // Get the section ID
+            scrollToSection(sectionId);
+        });
+    });
+});
 
-// Google Maps integration
-function initMap() {
-    var location = { lat: 40.712776, lng: -74.005974 }; // Example: New York City coordinates
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: location
-    });
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
+function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
 // Example of form submission handling (basic alert)
