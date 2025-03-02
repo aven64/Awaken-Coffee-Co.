@@ -160,6 +160,13 @@ section {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+.schedule-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
 .menu-container img {
     width: 100%;
     max-width: 500px;
